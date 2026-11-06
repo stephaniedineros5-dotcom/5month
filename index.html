@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Merry First Christmas & Happy 5 Months, Estelle ✨</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600&family=Great+Vibes&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            cinzel: ['Cinzel', 'serif'],
+            sans: ['Plus Jakarta Sans', 'sans-serif'],
+            script: ['Great Vibes', 'cursive'],
+          },
+          colors: {
+            velvetNight: '#0a0910',
+            rubyDeep: '#581c1c',
+            rubyGlow: '#dc2626',
+            emeraldDeep: '#022c22',
+            emeraldGlow: '#059669',
+            goldRich: '#f59e0b',
+            goldLight: '#fde68a',
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: #0a0910; }
+    ::-webkit-scrollbar-thumb { background: #dc2626; border-radius: 3px; }
+
+    /* Velvet Glassmorphism */
+    .velvet-card {
+      background: linear-gradient(135deg, rgba(88, 28, 28, 0.25) 0%, rgba(10, 9, 16, 0.85) 100%);
+      backdrop-filter: blur(25px);
+      -webkit-backdrop-filter: blur(25px);
+      border: 1px solid rgba(245, 158, 11, 0.22);
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    }
+
+    .emerald-badge-bg {
+      background: linear-gradient(90deg, rgba(5, 150, 105, 0.25) 0%, rgba(88, 28, 28, 0.35) 100%);
+      border: 1px solid rgba(5, 150, 105, 0.4);
+      box-shadow: 0 0 25px rgba(5, 150, 105, 0.3);
+    }
+
+    /* Golden Shimmer Animation */
+    .gold-shimmer {
+      background: linear-gradient(90deg, #fde68a 0%, #f59e0b 50%, #fde68a 100%);
+      background-size: 200% auto;
+      color: transparent;
+      -webkit-background-clip: text;
+      animation: goldShine 4s linear infinite;
+    }
+    @keyframes goldShine {
+      to { background-position: 200% center; }
+    }
+
+    /* Velvet Locket Photo Frames */
+    .velvet-locket {
+      transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      box-shadow: 0 15px 40px rgba(88, 28, 28, 0.4);
+    }
+    .velvet-locket:hover {
+      transform: translateY(-8px) scale(1.02);
+      box-shadow: 0 25px 60px rgba(220, 38, 38, 0.35);
+      border-color: rgba(245, 158, 11, 0.6);
+    }
+
+    /* Floating Fairy Dust Particles */
+    .fairy-particle {
+      position: absolute;
+      background: radial-gradient(circle, #fde68a 0%, rgba(245,158,11,0) 70%);
+      border-radius: 50%;
+      pointer-events: none;
+      animation: floatParticle linear infinite;
+    }
+    @keyframes floatParticle {
+      0% { transform: translateY(105vh) scale(0.3); opacity: 0; }
+      20% { opacity: 0.8; }
+      80% { opacity: 0.8; }
+      100% { transform: translateY(-10vh) scale(1.2); opacity: 0; }
+    }
+  </style>
+</head>
+<body class="bg-velvetNight text-slate-100 font-sans min-h-screen relative overflow-x-hidden selection:bg-rubyGlow selection:text-white">
+
+  <!-- FLOATING FAIRY DUST CONTAINER -->
+  <div id="fairyDustContainer" class="fixed inset-0 pointer-events-none z-0 overflow-hidden"></div>
+
+  <!-- HEADER NAVIGATION -->
+  <nav class="sticky top-0 z-50 bg-velvetNight/90 backdrop-blur-xl border-b border-goldRich/20 px-6 py-4">
+    <div class="max-w-5xl mx-auto flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <span class="w-3 h-3 rounded-full bg-rubyGlow animate-pulse"></span>
+        <span class="font-cinzel text-xs sm:text-sm tracking-[0.2em] text-goldLight uppercase font-semibold">Estelle & Me • Winter Velvet Sanctuary</span>
+      </div>
+      <span class="text-xs font-cinzel text-goldRich tracking-widest">Dec 22, 2026</span>
+    </div>
+  </nav>
+
+  <!-- MAIN CONTAINER -->
+  <main class="max-w-4xl mx-auto px-4 py-12 sm:py-20 flex flex-col gap-16 sm:gap-24 relative z-10">
+
+    <!-- HERO HEADER SECTION -->
+    <header class="text-center flex flex-col items-center gap-6">
+      <!-- Emerald & Ruby Glassmorphic Badge -->
+      <div class="emerald-badge-bg rounded-full px-6 py-2 flex items-center gap-2">
+        <span class="text-xs">🎄</span>
+        <span class="font-cinzel text-xs sm:text-sm font-semibold tracking-widest text-goldLight">December 22, 2026 • First Christmas & 5th Month</span>
+        <span class="text-xs">✨</span>
+      </div>
+
+      <h1 class="font-cinzel text-3xl sm:text-5xl md:text-6xl font-bold gold-shimmer tracking-wide leading-tight">
+        Merry First Christmas &<br/>Happy 5 Months, Estelle
+      </h1>
+
+      <p class="text-xs sm:text-sm text-slate-300 font-light max-w-lg leading-relaxed tracking-wide">
+        Wrapped in midnight velvet and ruby warmth, this space is dedicated entirely to our journey, our first holiday together, and my unending love for you.
+      </p>
+
+      <!-- LIVE RELATIONSHIP TIMER (Counting up from July 22, 2026) -->
+      <div class="velvet-card w-full max-w-xl rounded-3xl p-6 sm:p-8 mt-4">
+        <p class="font-cinzel text-[11px] font-semibold text-goldRich uppercase tracking-[0.3em] mb-4">Our Love Story Timer (Since July 22, 2026)</p>
+        <div class="grid grid-cols-4 gap-3 sm:gap-4">
+          <div class="bg-black/60 rounded-2xl p-3 sm:p-4 border border-white/10">
+            <span id="timer-days" class="font-cinzel text-2xl sm:text-4xl font-bold text-white block">0</span>
+            <span class="text-[9px] sm:text-[10px] text-slate-400 uppercase tracking-widest mt-1 block">Days</span>
+          </div>
+          <div class="bg-black/60 rounded-2xl p-3 sm:p-4 border border-white/10">
+            <span id="timer-hours" class="font-cinzel text-2xl sm:text-4xl font-bold text-white block">0</span>
+            <span class="text-[9px] sm:text-[10px] text-slate-400 uppercase tracking-widest mt-1 block">Hours</span>
+          </div>
+          <div class="bg-black/60 rounded-2xl p-3 sm:p-4 border border-white/10">
+            <span id="timer-mins" class="font-cinzel text-2xl sm:text-4xl font-bold text-white block">0</span>
+            <span class="text-[9px] sm:text-[10px] text-slate-400 uppercase tracking-widest mt-1 block">Mins</span>
+          </div>
+          <div class="bg-black/60 rounded-2xl p-3 sm:p-4 border border-white/10">
+            <span id="timer-secs" class="font-cinzel text-2xl sm:text-4xl font-bold text-white block">0</span>
+            <span class="text-[9px] sm:text-[10px] text-slate-400 uppercase tracking-widest mt-1 block">Secs</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- SECTION 1: DUAL VELVET LOCKET PHOTO FRAMES -->
+    <section class="velvet-card rounded-3xl p-6 sm:p-12 text-center">
+      <div class="mb-8">
+        <span class="font-cinzel text-xs text-goldRich uppercase tracking-widest">Our Keepsake Lockets</span>
+        <h2 class="font-cinzel text-2xl sm:text-4xl font-bold text-white mt-1">Side by Side in Heart</h2>
+        <p class="text-xs sm:text-sm text-slate-300 mt-1">Framed in vintage ruby velvet and gold filigree</p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-2xl mx-auto">
+        <!-- Estelle's Locket -->
+        <div class="velvet-locket velvet-card rounded-2xl p-4 flex flex-col items-center">
+          <div class="w-full h-72 sm:h-80 rounded-xl overflow-hidden bg-slate-900 border border-goldRich/30 mb-4 relative group">
+            <img src="estelle_5m.jpg" alt="Estelle" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.onerror=null; this.src='https://placehold.co/400x550/581c1c/fde68a?text=Estelle+%F0%9F%8C%B8';" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-80"></div>
+            <span class="absolute bottom-3 left-4 font-script text-3xl text-goldLight">Estelle 🌸</span>
+          </div>
+          <p class="font-cinzel text-xs text-slate-300 tracking-wider uppercase">My Dearest Love</p>
+        </div>
+
+        <!-- My Locket -->
+        <div class="velvet-locket velvet-card rounded-2xl p-4 flex flex-col items-center">
+          <div class="w-full h-72 sm:h-80 rounded-xl overflow-hidden bg-slate-900 border border-goldRich/30 mb-4 relative group">
+            <img src="me_5m.jpg" alt="Me" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.onerror=null; this.src='https://placehold.co/400x550/022c22/fde68a?text=Me+%E2%9C%A8';" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-80"></div>
+            <span class="absolute bottom-3 left-4 font-script text-3xl text-goldLight">Always Yours ✨</span>
+          </div>
+          <p class="font-cinzel text-xs text-slate-300 tracking-wider uppercase">Forever Devoted</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: OUR YEAR OF FIRSTS (INTERACTIVE TIMELINE JOURNEY) -->
+    <section class="velvet-card rounded-3xl p-6 sm:p-12">
+      <div class="text-center mb-10">
+        <span class="font-cinzel text-xs text-goldRich uppercase tracking-widest">Chronicles of Us</span>
+        <h2 class="font-cinzel text-2xl sm:text-4xl font-bold text-white mt-1">Our Year of Firsts 🕰️</h2>
+        <p class="text-xs sm:text-sm text-slate-300 mt-1">Click each milestone card to open its memory chapter</p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-5 gap-3 mb-8">
+        <!-- Tab 1 -->
+        <button onclick="switchMilestone(0)" id="mTab0" class="milestone-tab p-3 rounded-xl border border-goldRich/30 bg-rubyDeep/40 text-left transition-all hover:border-goldRich">
+          <span class="text-[10px] text-goldLight font-cinzel block">July 22</span>
+          <span class="text-xs font-bold text-white block mt-0.5">Got Together</span>
+        </button>
+        <!-- Tab 2 -->
+        <button onclick="switchMilestone(1)" id="mTab1" class="milestone-tab p-3 rounded-xl border border-white/10 bg-black/40 text-left transition-all hover:border-goldRich">
+          <span class="text-[10px] text-goldLight font-cinzel block">Oct 28</span>
+          <span class="text-xs font-bold text-white block mt-0.5">Her Birthday</span>
+        </button>
+        <!-- Tab 3 -->
+        <button onclick="switchMilestone(2)" id="mTab2" class="milestone-tab p-3 rounded-xl border border-white/10 bg-black/40 text-left transition-all hover:border-goldRich">
+          <span class="text-[10px] text-goldLight font-cinzel block">Oct 31</span>
+          <span class="text-xs font-bold text-white block mt-0.5">First Halloween</span>
+        </button>
+        <!-- Tab 4 -->
+        <button onclick="switchMilestone(3)" id="mTab3" class="milestone-tab p-3 rounded-xl border border-white/10 bg-black/40 text-left transition-all hover:border-goldRich">
+          <span class="text-[10px] text-goldLight font-cinzel block">Dec 22</span>
+          <span class="text-xs font-bold text-white block mt-0.5">5 Months & Xmas</span>
+        </button>
+        <!-- Tab 5 -->
+        <button onclick="switchMilestone(4)" id="mTab4" class="milestone-tab p-3 rounded-xl border border-white/10 bg-black/40 text-left transition-all hover:border-goldRich">
+          <span class="text-[10px] text-goldLight font-cinzel block">Jan 1</span>
+          <span class="text-xs font-bold text-white block mt-0.5">First New Year</span>
+        </button>
+      </div>
+
+      <!-- Milestone Display Box -->
+      <div id="milestoneContentBox" class="bg-black/60 border border-goldRich/30 rounded-2xl p-6 sm:p-8 transition-all duration-500">
+        <div class="flex items-center justify-between mb-3">
+          <span id="mBadge" class="text-xs font-cinzel px-3.5 py-1 rounded-full bg-rubyGlow/30 text-goldLight border border-rubyGlow/50">Chapter I</span>
+          <span id="mDate" class="text-xs text-rose-300 font-medium">July 22, 2026</span>
+        </div>
+        <h3 id="mTitle" class="font-cinzel text-2xl sm:text-3xl font-bold text-white mb-3">Where Our Story Began</h3>
+        <p id="mDesc" class="text-sm sm:text-base text-slate-300 leading-relaxed font-light">
+          The exact day we officially became us! Coincidentally happening on my birthday, making you the most precious, wonderful birthday gift I could have ever received.
+        </p>
+      </div>
+    </section>
+
+    <!-- SECTION 3: INTERACTIVE 'OUR CHRISTMAS WISH JAR' -->
+    <section class="velvet-card rounded-3xl p-6 sm:p-12 text-center">
+      <div class="mb-6">
+        <span class="font-cinzel text-xs text-goldRich uppercase tracking-widest">Holiday Surprises</span>
+        <h2 class="font-cinzel text-2xl sm:text-4xl font-bold text-white mt-1">Our Christmas Wish Jar 🏺✨</h2>
+        <p class="text-xs sm:text-sm text-slate-300 mt-1">Tap below to draw a secret holiday promise from my heart to yours</p>
+      </div>
+
+      <!-- Wish Jar Container -->
+      <div class="my-8 max-w-lg mx-auto">
+        <button onclick="drawWish()" class="w-full py-5 rounded-2xl bg-gradient-to-r from-rubyDeep via-emeraldDeep to-rubyDeep border border-goldRich/50 text-goldLight font-cinzel font-semibold tracking-widest text-sm uppercase shadow-2xl hover:scale-105 transition-all">
+          ✨ Tap to Draw a Christmas Note ✨
+        </button>
+
+        <div id="wishNoteDisplay" class="hidden mt-6 bg-black/80 border border-goldRich/40 rounded-2xl p-6 text-left transition-all">
+          <p class="font-cinzel text-xs text-goldRich uppercase tracking-widest mb-1" id="wishNumber">Note #1</p>
+          <p id="wishText" class="font-serif text-lg text-slate-100 italic leading-relaxed"></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: HEARTFELT 5TH MONTH & FIRST CHRISTMAS LETTER -->
+    <section class="velvet-card rounded-3xl p-8 sm:p-14 relative overflow-hidden">
+      <div class="absolute top-0 right-0 p-8 opacity-10 text-8xl font-cinzel text-goldRich pointer-events-none">V</div>
+      
+      <div class="max-w-2xl mx-auto">
+        <span class="font-cinzel text-xs text-goldRich uppercase tracking-widest block mb-2">A Letter For Estelle</span>
+        <h2 class="font-cinzel text-3xl sm:text-4xl font-bold text-white mb-8">To My Dearest Estelle ❤️</h2>
+
+        <div class="space-y-6 text-sm sm:text-base text-slate-200 font-light leading-relaxed">
+          <p>
+            Happy 5th Month Anniversary, and Merry First Christmas, my love! Looking back at July 22, when our paths aligned so perfectly on my birthday, to celebrating your special day on October 28, our spooky first Halloween, and now standing together as we welcome our very first Christmas—every single milestone with you feels like a dream I never want to wake up from.
+          </p>
+          <p>
+            Even though miles and time zones keep us apart right now, you are the closest person to my heart. You bring peace to my busiest days, warmth to the cold winter nights, and endless joy into my world. Thank you for loving me so patiently and purely over these past five months.
+          </p>
+          <p>
+            As we count down the remaining days to face our very first New Year together in 2027, please know that my greatest wish is for the day we finally close the distance. Until then, you hold my entire heart, today and for all the Christmases yet to come.
+          </p>
+        </div>
+
+        <div class="mt-10 pt-6 border-t border-goldRich/20 flex flex-col items-end">
+          <span class="font-script text-4xl text-goldLight">Forever & Always Yours</span>
+          <span class="font-cinzel text-xs text-slate-400 tracking-widest uppercase mt-1">December 22, 2026</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="text-center py-6 text-xs text-slate-500 font-cinzel tracking-widest border-t border-white/10">
+      Made with endless love for Estelle • 5 Months & First Christmas 🎄
+    </footer>
+
+  </main>
+
+  <!-- JAVASCRIPT LOGIC -->
+  <script>
+    // 1. LIVE RELATIONSHIP TIMER (JULY 22, 2026)
+    const startDate = new Date('2026-07-22T00:00:00');
+    function updateTimer() {
+      const now = new Date();
+      const diff = now - startDate;
+
+      const days = Math.max(0, Math.floor(diff / (1000 * 60 * 60 * 24)));
+      const hours = Math.max(0, Math.floor((diff / (1000 * 60 * 60)) % 24));
+      const minutes = Math.max(0, Math.floor((diff / 1000 / 60) % 60));
+      const seconds = Math.max(0, Math.floor((diff / 1000) % 60));
+
+      document.getElementById('timer-days').innerText = days;
+      document.getElementById('timer-hours').innerText = hours;
+      document.getElementById('timer-mins').innerText = minutes;
+      document.getElementById('timer-secs').innerText = seconds;
+    }
+    setInterval(updateTimer, 1000);
+    updateTimer();
+
+    // 2. BACKGROUND FAIRY DUST PARTICLES GENERATOR
+    function createFairyDust() {
+      const container = document.getElementById('fairyDustContainer');
+      for (let i = 0; i < 25; i++) {
+        const particle = document.createElement('div');
+        particle.className = 'fairy-particle';
+        const size = Math.random() * 4 + 2;
+        particle.style.width = size + 'px';
+        particle.style.height = size + 'px';
+        particle.style.left = Math.random() * 100 + 'vw';
+        particle.style.animationDuration = (Math.random() * 6 + 4) + 's';
+        particle.style.animationDelay = (Math.random() * 5) + 's';
+        container.appendChild(particle);
+      }
+    }
+    createFairyDust();
+
+    // 3. OUR YEAR OF FIRSTS MILESTONE TABS
+    const milestones = [
+      {
+        badge: 'Chapter I',
+        date: 'July 22, 2026',
+        title: 'Where Our Story Began 🎂❤️',
+        desc: 'The exact day we officially became us! Coincidentally happening on my birthday, making you the most precious, wonderful birthday gift I could have ever received.'
+      },
+      {
+        badge: 'Chapter II',
+        date: 'October 28, 2026',
+        title: 'Her Special Day 🌸🎁',
+        desc: 'Celebrating your birthday! Even across the distance, making you feel cherished, celebrated, and deeply loved was everything to me.'
+      },
+      {
+        badge: 'Chapter III',
+        date: 'October 31, 2026',
+        title: 'Our First Spooky Season 🎃✨',
+        desc: 'Our very first Halloween together as a couple. Late-night conversations, adorable stories, and sweet holiday magic.'
+      },
+      {
+        badge: 'Chapter IV',
+        date: 'December 22, 2026',
+        title: '5 Months & First Christmas 🎄💖',
+        desc: 'Five full months of holding each other in our hearts and celebrating our very first Christmas together. You are my favorite holiday blessing.'
+      },
+      {
+        badge: 'Chapter V',
+        date: 'January 1, 2027',
+        title: 'Stepping Into the New Year 🎆🥂',
+        desc: 'Welcoming 2027 hand-in-hand for the very first time. I am so excited for all the chapters we are going to write together in the new year.'
+      }
+    ];
+
+    function switchMilestone(index) {
+      // Reset all tabs styling
+      for (let i = 0; i < 5; i++) {
+        const tab = document.getElementById(`mTab${i}`);
+        tab.className = 'milestone-tab p-3 rounded-xl border border-white/10 bg-black/40 text-left transition-all hover:border-goldRich';
+      }
+
+      // Highlight active tab
+      const activeTab = document.getElementById(`mTab${index}`);
+      activeTab.className = 'milestone-tab p-3 rounded-xl border border-goldRich/50 bg-rubyDeep/50 text-left transition-all shadow-[0_0_15px_rgba(245,158,11,0.2)]';
+
+      // Update content
+      const m = milestones[index];
+      document.getElementById('mBadge').innerText = m.badge;
+      document.getElementById('mDate').innerText = m.date;
+      document.getElementById('mTitle').innerText = m.title;
+      document.getElementById('mDesc').innerText = m.desc;
+    }
+
+    // 4. CHRISTMAS WISH JAR NOTES
+    const wishNotes = [
+      "\"I promise to be your safest comfort on stressful days and your loudest cheerleader in everything you pursue.\"",
+      "\"Distance is just a temporary number; every single day brings us one heartbeat closer to closing the gap for good.\"",
+      "\"I can't wait for the day we finally share our very first Christmas morning side-by-side in real life.\"",
+      "\"Thank you for making these past five months the warmest, happiest chapter of my life, Estelle.\"",
+      "\"As we step into 2027, my only resolution is to love you deeper, cherish you more, and make you smile every single day.\""
+    ];
+
+    let lastWishIndex = -1;
+    function drawWish() {
+      let idx;
+      do {
+        idx = Math.floor(Math.random() * wishNotes.length);
+      } while (idx === lastWishIndex);
+      lastWishIndex = idx;
+
+      const display = document.getElementById('wishNoteDisplay');
+      display.classList.remove('hidden');
+      document.getElementById('wishNumber').innerText = `Holiday Note #${idx + 1}`;
+      document.getElementById('wishText').innerText = wishNotes[idx];
+    }
+  </script>
+</body>
+</html>
